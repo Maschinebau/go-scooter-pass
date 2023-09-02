@@ -1,4 +1,3 @@
-import React, { useState } from 'react'
 import styles from './Exclusive.module.scss'
 import { TextBlock } from 'components/textBlock/textBlock'
 import {Carousel} from 'components/carousel/carousel'

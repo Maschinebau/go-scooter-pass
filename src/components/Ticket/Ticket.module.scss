@@ -68,8 +68,8 @@
   .samokat {
     width: 550px;
     height: 550px;
-    left: -130px;
-    top: -59px;
+    left: -42%;
+    top: -8%;
   }
   
   .title {
@@ -90,5 +90,11 @@
     height: 350px;
     top: 180px;
     left: 50%;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .samokat {
+    left: -60%;
   }
 }

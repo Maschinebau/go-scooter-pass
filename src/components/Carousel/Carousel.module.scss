@@ -69,22 +69,12 @@
     padding-top: 47px;
     overflow: visible;
     position: relative;
-    
   }
 
   .carousel {
-    display: flex;
-    flex-direction: row;
-    overflow-x: scroll;
     transform: none;
     padding: 0 0 72px 0;
     gap: 0;
-    display: flex;
-  }
-
-  .img {
-    margin-left: -15px;
-    max-width: 344px;
   }
 
   .decor2,
@@ -96,29 +86,9 @@
     width: 200px;
     height: 200px;
     top: -8%;
-    right: -16%;
+    right: 22%;
+    z-index: 1;
   }
-}
-
-.controls {
-  display: flex;
-  position: absolute;
-  left: 31%;
-  bottom: 0;
-  gap: 0 12px;
-  
-}
-
-.button1 {
-  @include background(48px, 48px, url(../../assets/left.svg));
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.button2 {
-  @include background(48px, 48px, url(../../assets/right.svg));
-  border-radius: 50%;
-  cursor: pointer;
 }
 
 

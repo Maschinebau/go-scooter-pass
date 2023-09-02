@@ -11,8 +11,8 @@ export default defineConfig({
       vars: '/src/scss/_vars.scss',
       components: '/src/components',
       assets: '/src/assets',
-      swiper: '/node_modules/swiper',
-      modules: '/node_modules'
+      // swiper: '/node_modules/swiper',
+      // modules: '/node_modules'
     }
   }
 })

@@ -1,6 +1,5 @@
 import styles from './Profit.module.scss'
 import { motion, AnimatePresence } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
 
 export function Profit() {
   const listOpacity = {

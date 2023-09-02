@@ -1,0 +1,44 @@
+@import "mixins";
+@import "shared";
+@import "vars";
+
+.img {
+  height: 344px;
+  border-radius: 15%;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.controls {
+  display: flex;
+  position: absolute;
+  bottom: -20%;
+  left: 31vw;
+  gap: 0 12px;
+  z-index: 2;
+}
+
+.button1 {
+  @include background(48px, 48px, url(../../assets/left.svg));
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.button2 {
+  @include background(48px, 48px, url(../../assets/right.svg));
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 380px) {
+  .wrapper {
+    margin-left: -15px;
+  }
+
+  .img {
+    height: 280px;
+  }
+}
