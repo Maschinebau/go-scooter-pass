@@ -164,23 +164,6 @@
   box-shadow: 10px 0px 98px 0px rgba(255, 222, 64, 0.9);
 }
 
-// @keyframes glowAnimation {
-//   100% {
-//     box-shadow: 0 2 10px rgba(255, 166, 0, 0.672);
-//   }
-//   50% {
-//     box-shadow: 0 0 0px rgb(255, 234, 46);
-//   }
-//   100% {
-//     box-shadow: 0 3 200pxpx rgba(255, 207, 16, 0.921);
-//   }
-// }
-
-// .button {
-//   animation: glowAnimation 3s infinite ease-in;
-// }
-
-
 @keyframes glowing {
   0% { box-shadow: 0 0 120px rgb(255, 238, 1); }
   30% { box-shadow: 0 0 60px rgb(254, 249, 177); }

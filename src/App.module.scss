@@ -1,6 +1,5 @@
-@import 'mixins';
-@import 'vars';
-
+@import './scss/_mixins.scss';
+@import './scss/_vars.scss';
 
 .container {
   padding: 125px 0;
@@ -10,14 +9,13 @@
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  
+
   @media screen and (max-width: $middle) {
     padding: 125px 0;
     max-width: calc(100vw - 15vw);
   }
 
   @media screen and (max-width: $tablet) {
-
   }
 
   @media screen and (max-width: $mobile) {
@@ -48,20 +46,19 @@
   font-family: "Ys-text";
   src: local("text-regular"),
     url("../public/text-regular.woff") format("woff");
-    font-weight: 400;
+  font-weight: 400;
 }
 
 @font-face {
   font-family: "Ys-text";
   src: local("text-medium"),
     url("../public/text-medium.woff") format("woff");
-    font-weight: 500;
+  font-weight: 500;
 }
 
 @font-face {
   font-family: "Ys-text";
   src: local("text-black"),
     url("../public/text-black.woff") format("woff");
-    font-weight: 900;
+  font-weight: 900;
 }
-
