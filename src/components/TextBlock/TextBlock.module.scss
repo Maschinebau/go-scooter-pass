@@ -1,17 +1,12 @@
 @import "mixins";
-@import "shared";
 @import "vars";
 
 .wrapper {
   position: relative;
 }
 
-.main {
-  max-width: 410px;
-}
-
 .subtitle {
   @include text-regular("");
-  max-width: 410px;
+  max-width: 440px;
 }
 

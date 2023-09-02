@@ -1,5 +1,4 @@
 @import "mixins";
-@import "shared";
 @import "vars";
 
 .join {
@@ -21,6 +20,7 @@
   font-size: 72px;
   padding-bottom: 30px;
   position: relative;
+  max-width: 400px
 }
 
 .text {

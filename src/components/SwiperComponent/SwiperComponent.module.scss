@@ -1,5 +1,4 @@
 @import "mixins";
-@import "shared";
 @import "vars";
 
 .img {
@@ -38,7 +37,12 @@
     margin-left: -15px;
   }
 
-  .img {
+
+}
+
+@media screen and (max-width: 330px) {
+   .img {
     height: 280px;
   }
 }
+ 

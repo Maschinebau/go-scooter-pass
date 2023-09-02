@@ -1,9 +1,8 @@
 @import 'mixins';
-@import 'shared';
 @import 'vars';
 
 .ticket {
-  padding-top: 88px;
+  padding-top: 117px;
   display: flex;
   position: relative;
   flex-direction: row-reverse;
@@ -11,12 +10,13 @@
 }
 
 .wrapper {
-  padding-right: 34px;
+  padding-right: 5px;
 }
 
 .title {
-    @extend .title-regular;
+    @include text-title('', 48px, -0.96px);
     padding-bottom: 35px;
+    max-width: 400px;
 }
 
 .text {
@@ -26,7 +26,7 @@
 .samokat {
   @include img(800px, 800px, cover, center);
   position: absolute;
-  top: -47px;
+  top: -20px;
   left: -269px;
 }
 
@@ -37,8 +37,8 @@
 .spinner {
   @include background(550px, 550px, url(../../assets/spinnerbottom.png));
   position: absolute;
-  top: 300px;
-  left: 150px;
+  top: 330px;
+  left: 146px;
   animation: rotation 60s linear infinite;
 }
 
