@@ -1,0 +1,60 @@
+@mixin text-title($textShadow, $size, $spacing) {
+  color: #21201f;
+  font-size: $size;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 100%;
+  letter-spacing: $spacing;
+  text-shadow: $textShadow;
+  z-index: 1;
+  position: relative;
+
+  @media screen and (max-width: 450px) {
+    font-size: 32px;
+  }
+}
+
+@mixin text-regular($height) {
+  color: #21201f;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: $height;
+  z-index: 1;
+  position: relative;
+
+  @media screen and (max-width: 450px) {
+    font-size: 16px;
+  }
+}
+
+@mixin text-grey {
+  color: #c5c5c5;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  max-width: 900px;
+  z-index: 1;
+  position: relative;
+
+  @media screen and (max-width: 450px) {
+    font-size: 10px;
+  }
+}
+
+@mixin background($width, $height, $url) {
+  background-image: $url;
+  width: $width;
+  height: $height;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+@mixin img($width, $height, $fit, $pos) {
+  width: $width;
+  height: $height;
+  object-fit: $fit;
+  object-position: $pos;
+}

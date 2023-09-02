@@ -1,0 +1,78 @@
+@import "mixins";
+@import "shared";
+@import "vars";
+
+.list {
+  display: grid;
+  gap: 58px 76px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+}
+
+.profit {
+  padding-top: 120px;
+}
+
+.icon1 {
+  @include background(83px, 83px, url(assets/Frame000.svg));
+  flex-shrink: 0;
+}
+
+.icon2 {
+  @include background(83px, 83px, url(assets/Framescooter.svg));
+  flex-shrink: 0;
+}
+
+.icon3 {
+  @include background(83px, 83px, url(assets/Frametime.svg));
+  flex-shrink: 0;
+}
+
+.icon4 {
+  @include background(83px, 83px, url(assets/Framebattery.svg));
+  flex-shrink: 0;
+}
+
+.text {
+  @include text-regular(120%);
+  padding-top: 18px;
+  max-width: 400px;
+}
+
+.title {
+  @include text-title(none, 56px, -1.12px);
+  padding-bottom: 40px;
+  max-width: 700px;
+}
+
+@media screen and (max-width: $tablet) {
+  .profit {
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .profit {
+    padding-top: 38px;
+  }
+
+  .title {
+    max-width: 300px;
+    padding-bottom: 48px;
+  }
+
+  .text {
+    padding-top: 0px;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 17px 0;
+  }
+
+  .item {
+    display: flex;
+    gap: 0 16px;
+  }
+}

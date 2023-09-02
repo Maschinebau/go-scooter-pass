@@ -1,11 +1,23 @@
-import { useState } from 'react'
-import styles from './App.module.css'
+import styles from './App.module.scss'
+import { Join } from 'components/join/join'
+import { Profit } from 'components/profit/profit'
+import { Exclusive } from 'components/exclusive/exclusive'
+import { Cash } from 'components/cash/cash'
+import { Ticket } from './components/Ticket/Ticket'
+import { Footer } from './components/Footer/Footer'
 
 function App() {
 
   return (
     <div className={styles.content}>
-      <h1>Hello, yandex team 😺</h1>
+      <div className={styles.container}>
+        <Join />
+        <Profit />
+        <Exclusive />
+        <Cash />
+        <Ticket/>
+        <Footer/>
+      </div>
     </div>
   )
 }

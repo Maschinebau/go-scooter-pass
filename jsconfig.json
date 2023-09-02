@@ -1,0 +1,13 @@
+
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "baseUrl": ".",
+    "paths": {
+      "src/*": ["src/*"],
+      "@SwiperBundleCss": ["./node_modules/swiper/swiper-bundle.min.css"],
+      "@SwiperBundle": ["./node_modules/swiper/swiper-bundle.esm.js"],
+      "@Swiper": ["./node_modules/swiper/swiper.esm.js"],
+    },
+  }
+}

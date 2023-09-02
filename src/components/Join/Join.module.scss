@@ -1,0 +1,165 @@
+@import "mixins";
+@import "shared";
+@import "vars";
+
+.join {
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+
+.logo {
+  display: block;
+  width: 174px;
+  height: 50px;
+  background: url(../../assets/YandexGoRublack.svg) no-repeat center/contain;
+  margin-bottom: 63px;
+}
+
+.title {
+  @include text-title(none, none, -1.44px);
+  font-size: 72px;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.text {
+  @include text-regular(130%);
+  padding-bottom: 37px;
+  max-width: 420px;
+}
+
+.price {
+  border-radius: 500px;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.63) 0%, rgba(255, 255, 255, 0.63) 100%),
+    radial-gradient(141.42% 141.42% at 100% -0%, #e0b8ff 0%, #b6b9ff 100%);
+  max-width: 150px;
+}
+
+.first {
+  border-radius: 500px;
+  line-height: 120%;
+  background: radial-gradient(141.42% 141.42% at 100% -0%, #e0b8ff 0%, #b6b9ff 100%);
+  padding: 0 12px;
+}
+
+.second {
+  @include text-regular(120%);
+  color: #808080;
+  font-size: 16px;
+  padding: 0 12px;
+  text-decoration: line-through;
+  text-align: center;
+}
+
+.scoooter {
+  @include img(820px, 700px, cover, center);
+  position: absolute;
+  top: -74px;
+  right: -185px;
+}
+
+.spinner {
+  @include background(215px, 215px, url(../../assets/spinnertop.png));
+  position: absolute;
+  top: 375px;
+  right: 87px;
+  animation: rotation 60s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .scoooter {
+    position: static;
+    left: 0;
+    top: 0;
+    transform: translateX(-100px);
+  }
+
+  .spinner {
+    top: 78%;
+    right: 40%;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .spinner {
+    right: 32%;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .scoooter {
+    max-width: 300px;
+    height: 300px;
+    transform: none;
+  }
+
+  .spinner {
+    width: 90px;
+    height: 90px;
+    top: 80%;
+    left: 35%;
+    @media screen and (max-width: 330px) {
+      top: 81%;
+      left: 45%;
+    }
+  }
+
+  .text {
+    padding: 0px;
+    font-size: 18px;
+  }
+
+  .title {
+    padding-bottom: 24px;
+    font-size: 36px;
+    max-width: 220px;
+    letter-spacing: -0.72px
+  }
+
+  .logo {
+    width: 110px;
+    height: 32px;
+    margin-bottom: 28px;
+  }
+}
+
+.button {
+  border-radius: 36px;
+  background-color: #FFDE40;
+  box-shadow: 0px 4px 98px 0px rgba(255, 222, 64, 0.59);
+  text-align: center;
+  width: 318px;
+  height: 65px;
+  border: #FFDE40;
+  cursor: pointer;
+  font-size: 28px;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  color: #21201F;
+  z-index: 5;
+  @include text-regular(22px);
+
+  @media screen and (max-width: $mobile) {
+    width: 311px;
+    height: 49px;
+    font-size: 18px;
+    position: fixed;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.button:hover {
+  background-color: rgb(255, 238, 0);
+  box-shadow: 0px 4px 98px 0px rgba(255, 222, 64, 0.9); /* Adjust the shadow color and opacity here */
+}

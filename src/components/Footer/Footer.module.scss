@@ -1,0 +1,15 @@
+@import "mixins";
+@import "shared";
+@import "vars";
+
+.footer {
+  padding-top: 111px;
+
+  @media screen and (max-width: $mobile) {
+    padding-top: 72px;
+  }
+}
+
+.text {
+  @include text-grey;
+}

@@ -1,0 +1,28 @@
+@import 'mixins';
+@import 'shared';
+@import 'vars';
+
+.button {
+  border-radius: 36px;
+  background-color: #FFDE40;
+  box-shadow: 0px 4px 98px 0px rgba(255, 222, 64, 0.59);
+  text-align: center;
+  width: 318px;
+  height: 65px;
+  border: #FFDE40;
+  cursor: pointer;
+  font-size: 28px;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  color: #21201F;
+  z-index: 1;
+  @include text-regular(22px);
+
+  @media screen and (max-width: $mobile) {
+    font-size: 18px;
+  }
+}
+
+.button:hover {
+  background-color: rgb(255, 238, 0);
+  box-shadow: 0px 4px 98px 0px rgba(255, 222, 64, 0.9); /* Adjust the shadow color and opacity here */
+}

@@ -1,0 +1,51 @@
+@import "mixins";
+@import "shared";
+@import "vars";
+
+.cash {
+  width: 100%;
+  padding-top: 110px;
+  position: relative;
+}
+
+.title {
+  @extend .title-regular;
+  padding-bottom: 35px;
+}
+
+.text {
+  @include text-regular(120%);
+}
+
+.scooter {
+  @include img(900px, 900px, contain, center);
+  position: absolute;
+  top: -130px;
+  right: -275px;
+}
+
+.plus {
+  @include background(300px, 300px, url(../../assets/PLUS_010_0050.png));
+  position: absolute;
+  top: 160px;
+  right: 150px;
+}
+
+@media screen and (max-width: $tablet) {
+}
+
+@media screen and (max-width: $mobile) {
+  .scooter,
+  .plus {
+    display: none;
+  }
+
+  .cash {
+    padding-top: 70px;
+  }
+
+  .title {
+    max-width: 280px;
+    padding-bottom: 22px;
+  }
+}

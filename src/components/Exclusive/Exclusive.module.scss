@@ -1,0 +1,41 @@
+@import "mixins";
+@import "shared";
+@import "vars";
+
+.exclusive {
+  padding-top: 122px;
+}
+
+.title {
+  @extend .title-regular;
+  padding-bottom: 35px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  max-width: 600px;
+}
+
+.text {
+  max-width: 438px;
+}
+
+@media screen and (max-width: 1000px) {
+  .text {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .text {
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .exclusive {
+    padding-top: 66px;
+  }
+
+  .title {
+    max-width: 220px;
+    padding-bottom: 22px;
+  }
+}

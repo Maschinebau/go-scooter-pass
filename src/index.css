@@ -1,12 +1,23 @@
-:root {
-  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400; */
-  /* color-scheme: light dark; */
 
+:root {
+  font-family: Ys-text;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  background-color: #fff;
 }
+
+:root::-webkit-scrollbar {
+  display: none;
+}
+
+h1, h2, h3, h4, p, ul, li, a, body, figure, button {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+}
+
