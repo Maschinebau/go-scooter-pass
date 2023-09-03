@@ -6,9 +6,6 @@
   max-width: 918px;
   margin: auto;
   position: relative;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
 
   @media screen and (max-width: $middle) {
     padding: 125px 0;

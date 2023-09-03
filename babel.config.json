@@ -1,4 +1,9 @@
 {
   "presets": ["@babel/preset-react", "@babel/preset-env"],
-  "plugins": ["@babel/plugin-transform-react-jsx"]
+  "plugins": [
+    "@babel/plugin-transform-react-jsx"
+    // Дополнительные плагины
+    // "@babel/plugin-transform-runtime",
+    // "@babel/plugin-proposal-class-properties"
+  ]
 }

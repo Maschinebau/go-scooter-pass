@@ -3,15 +3,15 @@ import commonjs from 'rollup-plugin-commonjs';
 import babel from 'rollup-plugin-babel';
 import postcss from 'rollup-plugin-postcss';
 import sass from 'rollup-plugin-sass';
+import jsx from 'rollup-plugin-jsx';
 
-const format = process.env.FORMAT === 'cjs' ? 'cjs' : 'iife';
+// const format = process.env.FORMAT === 'cjs' ? 'cjs' : 'iife';
 
 export default {
   input: 'src/main.jsx',
   output: [
     {
-      format,
-      dir: 'dist', 
+      file: 'dist/bundle.js',
     },
   ],
   plugins: [
@@ -21,10 +21,10 @@ export default {
     commonjs(),
     babel({
       exclude: './node_modules/**',
+      presets: ['@babel/preset-react'],
     }),
-    sass({
-      output: 'dist/main.css',
-    }),
+    sass(),
     postcss(),
+    jsx({ factory: 'React.createElement' }),
   ],
 };

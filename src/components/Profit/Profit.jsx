@@ -24,7 +24,7 @@ export function Profit() {
           className={styles.item}
         >
           <div className={styles.icon1}></div>
-          <p className={styles.text}>0 ₽ за старт в каждой поездке</p>
+          <p className={styles.text}>0 ₽ за старт в каждой поездке</p>
         </motion.li>
         <motion.li
           variants={listOpacity}
@@ -36,7 +36,7 @@ export function Profit() {
           <div className={styles.icon2}></div>
           <p className={styles.text}>
             Катаетесь c друзьями? Бронируйте до трёх самокатов c аккаунта c
-            абонементом — так у всех будет бесплатный старт
+            абонементом — так у всех будет бесплатный старт
           </p>
         </motion.li>
         <motion.li
@@ -56,7 +56,7 @@ export function Profit() {
           variants={listOpacity}
           initial="hidden"
           animate="visible"
-          transition={{ delay: 2.8 }}
+          transition={{ ...listTransition, delay: 2.8 }}
           className={styles.item}
         >
           <div className={styles.icon4}></div>

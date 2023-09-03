@@ -14,7 +14,7 @@ export const TextBlock = ({hasButton, ...props }) => {
 }
 
 TextBlock.propTypes = {
-  hasButton: PropTypes.bool.isRequired,
+  hasButton: PropTypes.bool,
   wrapperClass: PropTypes.string,
   titleClass: PropTypes.string,
   title: PropTypes.string.isRequired,

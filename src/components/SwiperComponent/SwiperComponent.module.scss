@@ -7,8 +7,7 @@
 }
 
 .wrapper {
-  position: relative;
-  width: 100%;
+  width: calc(100% + 50px);
 }
 
 .controls {
@@ -17,19 +16,39 @@
   bottom: -20%;
   left: 31vw;
   gap: 0 12px;
-  z-index: 2;
+  z-index: 1;
 }
 
 .button1 {
   @include background(48px, 48px, url(../../assets/left.svg));
   border-radius: 50%;
   cursor: pointer;
+
+  &:active {
+    animation: pulse 1s infinite;
+  }
 }
 
 .button2 {
   @include background(48px, 48px, url(../../assets/right.svg));
   border-radius: 50%;
   cursor: pointer;
+
+  &:active {
+    animation: pulse 1s infinite;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 @media screen and (max-width: 380px) {
