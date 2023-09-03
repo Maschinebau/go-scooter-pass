@@ -2,13 +2,12 @@ import styles from "./Carousel.module.scss"
 import { motion } from "framer-motion"
 import { useInView } from "react-intersection-observer"
 import { SwiperComponent } from "components/swiperComponent/swiperComponent"
+import  first  from "../../assets/first.jpg"
+import  second  from "../../assets/second.jpg"
+import  third  from "../../assets/third.jpg"
+import  fourth  from "../../assets/fourth.jpg"
 
-const images = [
-  "src/assets/first.jpg",
-  "src/assets/second.jpg",
-  "src/assets/third.jpg",
-  "src/assets/fourth.jpg"
-]
+const images = [first, second, third, fourth]
 const isMobileResolution = window.innerWidth <= 450
 
 export function Carousel() {

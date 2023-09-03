@@ -49,13 +49,13 @@
 @font-face {
   font-family: "Ys-text";
   src: local("text-medium"),
-    url("../public/text-medium.woff") format("woff");
+    url("/public/text-medium.woff") format("woff");
   font-weight: 500;
 }
 
 @font-face {
   font-family: "Ys-text";
   src: local("text-black"),
-    url("../public/text-black.woff") format("woff");
+    url("/public/text-black.woff") format("woff");
   font-weight: 900;
 }

@@ -1,5 +1,6 @@
 import styles from './Ticket.module.scss'
 import { TextBlock } from 'components/TextBlock/TextBlock'
+import samokat from '../../assets/groupbottom.png'
 
 export function Ticket() {
 
@@ -16,7 +17,7 @@ export function Ticket() {
           buttonExtraClass={styles.button}
         />
       </div>
-      <img className={styles.samokat} src="src/assets/groupbottom.png" alt="самокат яндекса" />
+      <img className={styles.samokat} src={samokat} alt="самокат яндекса" />
       <div className={styles.spinner}></div>
     </section>
   )

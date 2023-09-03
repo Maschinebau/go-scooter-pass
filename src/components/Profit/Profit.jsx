@@ -20,7 +20,7 @@ export function Profit() {
           variants={listOpacity}
           initial="hidden"
           animate="visible"
-          transition={{ ...listTransition, delay: 1 }}
+          transition={{ ...listTransition, delay: 1.2 }}
           className={styles.item}
         >
           <div className={styles.icon1}></div>
@@ -30,7 +30,7 @@ export function Profit() {
           variants={listOpacity}
           initial="hidden"
           animate="visible"
-          transition={{ ...listTransition, delay: 1.6 }}
+          transition={{ ...listTransition, delay: 1.9 }}
           className={styles.item}
         >
           <div className={styles.icon2}></div>
@@ -43,7 +43,7 @@ export function Profit() {
           variants={listOpacity}
           initial="hidden"
           animate="visible"
-          transition={{ ...listTransition, delay: 2 }}
+          transition={{ ...listTransition, delay: 2.6 }}
           className={styles.item}
         >
           <div className={styles.icon3}></div>
@@ -56,7 +56,7 @@ export function Profit() {
           variants={listOpacity}
           initial="hidden"
           animate="visible"
-          transition={{ ...listTransition, delay: 2.8 }}
+          transition={{ ...listTransition, delay: 3.3 }}
           className={styles.item}
         >
           <div className={styles.icon4}></div>

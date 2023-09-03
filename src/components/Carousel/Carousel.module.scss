@@ -32,6 +32,7 @@
   position: absolute;
   top: -300px;
   right: -320px;
+  animation: rockingAnimation 2s infinite ease-in-out;
 }
 
 .decor2 {
@@ -39,6 +40,7 @@
   position: absolute;
   top: -70px;
   left: -285px;
+  animation: rockingAnimation 2s infinite ease-in-out;
 }
 
 .decor3 {
@@ -46,6 +48,7 @@
   position: absolute;
   bottom: -170px;
   right: -300px;
+  animation: rockingAnimation 2s infinite ease-in-out;
 }
 
 .img {
@@ -90,4 +93,14 @@
   }
 }
 
-
+@keyframes rockingAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(6deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

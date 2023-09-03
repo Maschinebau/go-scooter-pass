@@ -52,8 +52,28 @@
 }
 
 @media screen and (max-width: $tablet) {
+  .ticket {
+    padding-top: 500px;
+  }
 
+  .samokat {
+    left: -14%;
+    top: -9%;
+  }
+
+  .spinner {
+    top: 250px;
+    left: 50%;
+  }
 }
+
+// @media screen and (max-width: 415px) {
+//   .samokat {
+//     left: -156%;
+//     top: -9%;
+//     transform: translateX(-50%);
+//   }
+// }
 
 @media screen and (max-width: $mobile) {
   .ticket {
@@ -70,7 +90,14 @@
     height: 550px;
     left: -42%;
     top: -8%;
+    transform: translateX(8%);
+    
+
+    @media screen and (max-width: 380px) {
+      transform: translateX(-10%);
+    }
   }
+  
   
   .title {
     padding-bottom: 21px;
