@@ -1,16 +1,22 @@
 import styles from "./Profit.module.scss"
 import { motion } from "framer-motion"
+import { useInView } from 'react-intersection-observer'
 
 export function Profit() {
+
   const listOpacity = {
     hidden: { opacity: 0 },
     visible: { opacity: 1 },
   }
-
   const listTransition = {
     duration: 1,
     ease: "easeInOut",
   }
+
+  const [ref, inView] = useInView({
+    triggerOnce: true, 
+    threshold: 0.1, 
+  })
 
   return (
     <section className={styles.profit}>
@@ -19,9 +25,10 @@ export function Profit() {
         <motion.li
           variants={listOpacity}
           initial="hidden"
-          animate="visible"
-          transition={{ ...listTransition, delay: 1.2 }}
+          animate={inView ? "visible" : "hidden"} 
+          transition={{ ...listTransition, delay: 0.6 }}
           className={styles.item}
+          ref={ref} 
         >
           <div className={styles.icon1}></div>
           <p className={styles.text}>0 ₽ за старт в каждой поездке</p>
@@ -29,9 +36,10 @@ export function Profit() {
         <motion.li
           variants={listOpacity}
           initial="hidden"
-          animate="visible"
-          transition={{ ...listTransition, delay: 1.9 }}
+          animate={inView ? "visible" : "hidden"} 
+          transition={{ ...listTransition, delay: 1.2 }}
           className={styles.item}
+          ref={ref} 
         >
           <div className={styles.icon2}></div>
           <p className={styles.text}>
@@ -42,9 +50,10 @@ export function Profit() {
         <motion.li
           variants={listOpacity}
           initial="hidden"
-          animate="visible"
-          transition={{ ...listTransition, delay: 2.6 }}
+          animate={inView ? "visible" : "hidden"}
+          transition={{ ...listTransition, delay: 1.8 }}
           className={styles.item}
+          ref={ref}
         >
           <div className={styles.icon3}></div>
           <p className={styles.text}>
@@ -55,9 +64,10 @@ export function Profit() {
         <motion.li
           variants={listOpacity}
           initial="hidden"
-          animate="visible"
-          transition={{ ...listTransition, delay: 3.3 }}
+          animate={inView ? "visible" : "hidden"} 
+          transition={{ ...listTransition, delay: 2.4}}
           className={styles.item}
+          ref={ref}
         >
           <div className={styles.icon4}></div>
           <p className={styles.text}>
