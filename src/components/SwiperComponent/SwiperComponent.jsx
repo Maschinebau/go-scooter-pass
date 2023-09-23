@@ -1,9 +1,8 @@
 import styles from "./SwiperComponent.module.scss"
 import { Swiper, SwiperSlide } from "swiper/react"
 import "../../../node_modules/swiper/swiper.min.css"
-// import '../../../node_modules/swiper/swiper.css'
 import PropTypes from "prop-types"
-import { EffectCoverflow } from '../../../node_modules/swiper';
+import { EffectCoverflow } from "../../../node_modules/swiper"
 
 export function SwiperComponent({ images }) {
   let swiper
@@ -23,7 +22,8 @@ export function SwiperComponent({ images }) {
   return (
     <div className={styles.wrapper}>
       <Swiper
-        modules={[EffectCoverflow]} effect="coverflow"
+        modules={[EffectCoverflow]}
+        effect="coverflow"
         onSwiper={(node) => (swiper = node)}
         navigation={{
           prevEl: `.${styles.controls}`,

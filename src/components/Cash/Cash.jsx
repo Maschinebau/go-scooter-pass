@@ -6,7 +6,7 @@ import groupCashe from "../../assets/groupcashe.png"
 
 export function Cash() {
   const [ref, inView] = useInView({
-    triggerOnce: true // Ensures animation happens only once
+    triggerOnce: true
   })
 
   const plusAnimated = {

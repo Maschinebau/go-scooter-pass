@@ -1,7 +1,7 @@
 import styles from "./join.module.scss"
 import { motion } from "framer-motion"
 import { useInView } from "react-intersection-observer"
-import scooterImage from '../../assets/smkt00032.png'
+import scooterImage from "../../assets/smkt00032.png"
 
 export function Join() {
   const [ref, inView] = useInView({
@@ -64,11 +64,7 @@ export function Join() {
         </span>
       </motion.p>
       <button className={styles.button}>Стать частью клуба</button>
-      <img
-        className={styles.scoooter}
-        src={scooterImage}
-        alt="scooter"
-      />
+      <img className={styles.scoooter} src={scooterImage} alt="scooter" />
       <div className={styles.spinner}></div>
     </section>
   )
