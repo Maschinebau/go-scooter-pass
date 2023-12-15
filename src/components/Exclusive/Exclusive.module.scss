@@ -12,13 +12,6 @@
   max-width: 600px;
 }
 
-
-@media screen and (max-width: 1000px) {
-  .text {
-    max-width: 300px;
-  }
-}
-
 @media screen and (max-width: $tablet) {
   .text {
     width: 300px;

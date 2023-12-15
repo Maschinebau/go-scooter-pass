@@ -1,20 +1,6 @@
 @import 'mixins';
 @import 'vars';
-
-
-:root {
-  font-family: Ys-text;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-  background-color: #fff;
-}
-
-:root::-webkit-scrollbar {
-  display: none;
-}
+@import 'fonts';
 
 h1, h2, h3, h4, p, ul, li, a, body, figure, button {
   margin: 0;
@@ -24,5 +10,18 @@ h1, h2, h3, h4, p, ul, li, a, body, figure, button {
   border: none;
 }
 
+:root {
+  font-family: Ys-text;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  background-color: #fff;
+  min-width: 320px;
 
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
 

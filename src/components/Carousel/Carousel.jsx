@@ -30,11 +30,7 @@ export function Carousel() {
               animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 70 }}
               transition={{ duration: 0.7, delay: index * 0.4 }}
             >
-              <img
-                src={image}
-                alt={"Мероприятие докататься"}
-                className={styles.img}
-              />
+              <img src={image} alt={"Мероприятие докататься"} className={styles.img} />
             </motion.li>
           ))}
         </ul>

@@ -56,8 +56,7 @@ export function Join() {
         animate={inView ? "animate" : ""}
         ref={ref}
       >
-        Купите абонемент, чтобы стать&nbsp;&nbsp;&nbsp; частью клуба в новом
-        сезоне-2024. 8 месяцев за&nbsp;
+        Купите абонемент, чтобы стать&nbsp;&nbsp;&nbsp; частью клуба в новом сезоне-2024. 8 месяцев за&nbsp;
         <span className={styles.price}>
           <span className={styles.first}>499₽</span>
           <span className={styles.second}>3190₽</span>

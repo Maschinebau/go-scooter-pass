@@ -22,9 +22,9 @@
   @media screen and (max-width: 330px) {
     max-width: 250px;
   }
-}
 
-.button:hover {
-  background-color: rgb(255, 238, 0);
-  box-shadow: 0px 4px 98px 0px rgba(255, 222, 64, 0.9); /* Adjust the shadow color and opacity here */
+  &:hover {
+    background-color: rgb(255, 238, 0);
+    box-shadow: 0px 4px 98px 0px rgba(255, 222, 64, 0.9); /* Adjust the shadow color and opacity here */
+  }
 }

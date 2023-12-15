@@ -1,9 +1,10 @@
-@import './scss/_mixins.scss';
-@import './scss/_vars.scss';
+@import "./scss/_mixins.scss";
+@import "./scss/_vars.scss";
 
 .container {
   padding: 125px 0;
   max-width: 918px;
+  min-width: 256px;
   margin: auto;
   position: relative;
 
@@ -17,45 +18,26 @@
 
   @media screen and (max-width: $mobile) {
     padding: 32px 0 72px 0;
-    max-width: calc(100vw - 64px);
+    margin: 0 32px;
   }
 }
 
 .content {
   max-width: 1440px;
+  min-width: 320px;
   margin: auto;
   overflow: hidden;
-}
 
-.content::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 804px;
-  background-color: #f0f0f0;
-  background: linear-gradient(to bottom, #FFE2E0, #C4A0F6, #E3E6FE, white);
-  z-index: -1;
-}
-
-@font-face {
-  font-family: "Ys-text";
-  src: local("text-regular"),
-    url("../public/text-regular.woff") format("woff");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "Ys-text";
-  src: local("text-medium"),
-    url("/public/text-medium.woff") format("woff");
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: "Ys-text";
-  src: local("text-black"),
-    url("/public/text-black.woff") format("woff");
-  font-weight: 900;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 320px;
+    height: 804px;
+    background-color: #f0f0f0;
+    background: linear-gradient(to bottom, #ffe2e0, #c4a0f6, #e3e6fe, white);
+    z-index: -1;
+  }
 }

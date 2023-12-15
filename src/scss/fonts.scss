@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Ys-text";
+  src: local("text-regular"),
+    url("/text-regular.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Ys-text";
+  src: local("text-medium"),
+    url("/text-medium.woff") format("woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Ys-text";
+  src: local("text-black"),
+    url("/text-black.woff") format("woff");
+  font-weight: 900;
+}

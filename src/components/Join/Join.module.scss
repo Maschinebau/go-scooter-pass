@@ -20,7 +20,7 @@
   font-size: 72px;
   padding-bottom: 30px;
   position: relative;
-  max-width: 400px
+  max-width: 400px;
 }
 
 .text {
@@ -65,14 +65,14 @@
   top: 375px;
   right: 87px;
   animation: rotation 60s linear infinite;
-}
 
-@keyframes rotation {
-  0% {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotate(360deg);
+  @keyframes rotation {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
   }
 }
 
@@ -123,7 +123,7 @@
     padding-bottom: 24px;
     font-size: 36px;
     max-width: 220px;
-    letter-spacing: -0.72px
+    letter-spacing: -0.72px;
   }
 
   .logo {
@@ -135,16 +135,18 @@
 
 .button {
   border-radius: 36px;
-  background-color: #FFDE40;
+  background-color: #ffde40;
   // box-shadow: 0px 4px 98px 0px rgba(255, 222, 64, 0.59);
   text-align: center;
   width: 318px;
   height: 65px;
-  border: #FFDE40;
+  border: #ffde40;
   cursor: pointer;
   font-size: 28px;
-  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  color: #21201F;
+  transition:
+    background-color 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
+  color: #21201f;
   z-index: 5;
   @include text-regular(22px);
 
@@ -165,13 +167,20 @@
 }
 
 @keyframes glowing {
-  20% { box-shadow: 0 0 130px rgb(255, 238, 1); }
-  30% { box-shadow: 0 0 110px rgb(251, 239, 70); }
-  60% { box-shadow: 0 0 110px #fff944; }
-  100% { box-shadow: 0 0 110px rgb(250, 247, 194); }
+  20% {
+    box-shadow: 0 0 130px rgb(255, 238, 1);
+  }
+  30% {
+    box-shadow: 0 0 110px rgb(251, 239, 70);
+  }
+  60% {
+    box-shadow: 0 0 110px #fff944;
+  }
+  100% {
+    box-shadow: 0 0 110px rgb(250, 247, 194);
+  }
 }
 
 .button {
   animation: glowing 2s infinite;
 }
-
